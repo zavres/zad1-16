@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Olszewski()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Olszewski" cols="80" rows="30" disabled>
+ zadanie12_Olszewski.html
+ <!DOCTYPE html>
+<head>
+<title> proste obliczenia</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <div style="color:green;font-size: 48px;">
+    <script lang="JavaScript">
+        var liczba1=prompt("D1=",""); 
+        var liczba3=prompt("G1=","");
+        var liczba2=prompt("D2=","");
+        var liczba4=prompt("G2=","");
+        var ile_dni;
+        var ile_sekund;
+        var ile_razem;
+        var D1_olsz=parseFloat(liczba1);
+        var D2_olsz=parseFloat(liczba2);
+        var G1_olsz=parseFloat(liczba3);
+        var G2_olsz=parseFloat(liczba4);
+
+        ile_dni=(D1_olsz-D2_olsz)*24*3600;
+        ile_sekund=(G1_olsz-G2_olsz)*3600;
+        ile_razem=ile_dni+ile_sekund;
+        document.write("D1="+D1_olsz+"G1="+G1_olsz+"D2="+D2_olsz+"G2="+G2_olsz+"<br>")
+        document.write("ile sekund="+ile_razem+"s"+ "<br>")
+    </script>
+    </div>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Olszewski()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
