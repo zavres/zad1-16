@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Użycie fukcji </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+            var a_olsz = parseFloat(prompt("a=", ""));
+            var b_olsz = parseFloat(prompt("b=", ""));
+            function dodawanie_olsz(a_olsz, b_olsz) {
+                return a_olsz + b_olsz;
+            }
+            function odejmowanie_olsz(a_olsz, b_olsz) {
+                return a_olsz - b_olsz;
+            }
+            function mnozenie_olsz(a_olsz, b_olsz) {
+                return a_olsz * b_olsz;
+            }
+            function od_kwadratu_olsz(a_olsz, b_olsz) {
+                return (a_olsz * a_olsz)+ (b_olsz * b_olsz);
+            }         
+            document.write("suma=" + dodawanie_olsz(a_olsz, b_olsz) + "<br>");
+            document.write("odejmowanie=" + odejmowanie_olsz(a_olsz, b_olsz) + "<br>");
+            document.write("mnozenie=" + mnozenie_olsz(a_olsz, b_olsz) + "<br>");
+            document.write("do kwadratu=" + od_kwadratu_olsz(a_olsz, b_olsz) + "<br>");
+        </script>
+    </div>
+</body>
+
+</html>
